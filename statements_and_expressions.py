@@ -21,7 +21,7 @@ def sub(x , y):
     
 
 x= 2
-y=1
+y=5
 
 print(square(y+3))
 print(square(y + square(2))) # square(2) = 4 , 1+4 = 5, square(5) = 25.

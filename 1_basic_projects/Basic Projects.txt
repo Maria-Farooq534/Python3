@@ -4,15 +4,19 @@ Calculator
 
 Input two numbers and an operator (+, -, *, /).
 
+(Use conditionals and input handling).
 Print the result.
 
-(Use conditionals and input handling).
+#2
+
 
 Odd/Even & Prime Number Checker
 
 Take a number and check if it’s odd/even.
 
 Extend it to check if it’s prime.
+
+#3
 
 Guess the Number Game
 
@@ -24,6 +28,8 @@ User guesses until they get it right.
 
 Provide hints: "Too high" / "Too low".
 
+# 4
+
 Simple To-Do List (Console Based)
 
 Store tasks in a list.
@@ -31,6 +37,8 @@ Store tasks in a list.
 Add, remove, and display tasks.
 
 (Practice with list mutation, append, remove).
+
+#5
 
 Word Counter
 
@@ -40,7 +48,10 @@ Count words, letters, and occurrences of each word.
 
 (Use .split(), .count(), dictionaries later if you want).
 
+
 🔹 Slightly Bigger Beginner Projects
+
+#1
 
 Student Grade Calculator
 
@@ -49,6 +60,8 @@ Input marks of 5 subjects.
 Calculate percentage & grade (A, B, C…).
 
 (Use conditionals, lists, loops).
+
+# 2
 
 Simple Password Strength Checker
 

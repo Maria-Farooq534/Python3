@@ -1,51 +1,29 @@
-# add_data = [
+import random
+random_num = random.randrange(1,101)
+print("Welcom to the Guess the Number Game")
+print("I'm thinking a number between 1 and 100")
+
+attempts = 0
+guessed_correctly = False
+
+while not guessed_correctly:
+
+    try: 
+        user_guess = int(input("Enter a number to guess : "))
+        attempts += 1
+
+        if user_guess < random_num:
+            print(f"{user_guess} is below the number, Try again!")
+        elif user_guess > random_num:
+            print(f"{user_guess} is above the number, Try again!")
+        else:
+            print("Congragulations! You guessed it right!")
+            print(f"{random_num} was indeed the number.")
+            print(f"It looks like you took {attempts} attempts to guess it right.")
+            guessed_correctly = True
+
+    except ValueError:
+        print("Please enter a valid number!")
+
     
-#     (9, 'Diana Prince',18,'A','History', 95),
-#     (10,'Ethan Hunt',17,'C','Math',78),
-#     (11, "Maria", 23 , 'A', 'ML' , 95)
-# ]
-
-# file1 = open("student_dataset.csv" , "w")
-# for data in range(add_data):
-#     for i in data:
-#         file1.write(str(i))    
-#     file1.write("\n")
-# print(file1)
-
-import csv
-
-# Your data to add
-add_data = [
-    (9, 'Diana Prince', 18, 'A', 'History', 95),
-    (10, 'Ethan Hunt', 17, 'C', 'Math', 78),
-    (11, "Maria", 23, 'A', 'ML', 95)
-]
-
-# First, let's create the initial dataset with headers
-header = ['id', 'name', 'age', 'grade', 'subject', 'score']
-initial_data = [
-    [1, 'Alice Johnson', 18, 'A', 'Math', 92],
-    [2, 'Bob Smith', 17, 'B', 'Science', 85],
-    [3, 'Charlie Brown', 16, 'A', 'English', 88]
-]
-
-# Create and write to the CSV file
-with open("student_dataset.csv", "w", newline='') as file:
-    writer = csv.writer(file)
-    
-    # Write header
-    writer.writerow(header)
-    
-    # Write initial data
-    writer.writerows(initial_data)
-    
-    # Write additional data
-    writer.writerows(add_data)
-
-print("CSV file created successfully!")
-
-# Read and display the file content to verify
-with open("student_dataset.csv", "r") as file:
-    content = file.read()
-    print("\nFile content:")
-    print(content)
+print("Thanks for playing!")

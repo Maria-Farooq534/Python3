@@ -15,14 +15,6 @@ while True:
     print("3. View Tasks")
     print("4. Exit")
 
-    # print("""
-
-    # Choose one option : 
-    # 1. Add Tasks
-    # 2. Remove Tasks
-    # 3. View Tasks
-    # 4. Exit
-    # """)
 
     user_query = input("Select 1,2,3 or 4 : ")
     

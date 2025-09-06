@@ -66,3 +66,11 @@ print(fruits) # But still the original dict is same
 # If we have cherry
 fruits = {'apples': 250, 'banana': 450, 'cherry' : 330 , 'pears': 400, 'Grapes': 500, 'Mango': 457, 'orange': 250, 'watermelon': 500}
 print(fruits.get('cherry' , 23)) # This time, optional parameter is not going to be used.
+
+
+# Accumulation on it.
+total = 0
+for key in fruits:
+    if len(key) > 5:
+        total = total + fruits[key]
+print(total)

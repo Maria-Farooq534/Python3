@@ -38,7 +38,7 @@ print(f"t has {x['t']} occurances")
 
 print(" ")
 
-
+# What if we want to store each chacter in the txt to the dictionay: 
 y = {}
 for char in txt:
     if char not in y:
@@ -49,5 +49,24 @@ print(f"a : {y["a"]} occurances")
 print(f"b: {y["b"]} occurances")
 print(f"r : {x['r']} occurances")
 print(f"t : {x['t']} occurances")
-
 print(y)
+
+
+
+f = open("C:\\Users\\Ali\\Desktop\\Coursera\\Python_Programming\\2_Python_Func_Files_Dict\\Dictionaries_in_python\\emotion_words.txt" , "r")
+
+txt = f.read()
+letter_counts = {}
+for c in txt:
+    if c not in letter_counts:
+        letter_counts[c] = 0
+
+    letter_counts[c] = letter_counts[c] + 1
+
+# Write a loop that prints the letters and their counts
+letter_list = list(letter_counts.items())
+print(letter_list)
+for letter in letter_list:
+    m,n = letter
+    print(f"{m} : {n}")
+    #print(f"{letter[0]} : {letter_list(letter[1])} occurances ")

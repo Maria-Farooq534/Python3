@@ -21,3 +21,7 @@ for letter in letter_counts:
     if letter in letter_values:
         scrabble_scores = scrabble_scores + letter_values[letter] * letter_counts[letter]
 print(f"Total Scrabble Score : {scrabble_scores}")
+
+# In : letter_values[letter] * letter_counts[letter]
+# letter_values[letter] : is the value of character
+# letter_counts[letter] : is number of times it occurs

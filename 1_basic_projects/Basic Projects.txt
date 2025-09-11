@@ -71,6 +71,8 @@ Check if it has numbers, letters, length > 8, etc.
 
 Give feedback.
 
+# 3
+
 Rock, Paper, Scissors Game
 
 User vs Computer.
@@ -79,11 +81,15 @@ Use random.choice() for computer’s turn.
 
 Decide winner using conditionals.
 
+# 4
+
 Contact Book (Mini Version)
 
 Store names and phone numbers in a list.
 
 Add, search, delete contacts.
+
+# 5
 
 Turtle Drawing Patterns
 

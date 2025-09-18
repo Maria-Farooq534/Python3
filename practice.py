@@ -9,7 +9,7 @@ guessed_correctly = False
 while not guessed_correctly:
 
     try: 
-        user_guess = int(input("Enter a number to guess : "))
+        user_guess = int(input("Enter a number to guess: "))
         attempts += 1
 
         if user_guess < random_num:
